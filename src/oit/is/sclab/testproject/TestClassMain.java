@@ -8,6 +8,7 @@ public class TestClassMain {
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 		System.out.println("Test Projectです");
+		System.out.println("Test Branch用");
 	}
 
 }
