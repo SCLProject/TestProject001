@@ -34,7 +34,7 @@ public class TestClassMain extends JFrame implements ActionListener{
 	}
 	
 	/**
-	 * Constractor
+	 * Contractor
 	 */
 	public TestClassMain(){
 		
@@ -43,16 +43,18 @@ public class TestClassMain extends JFrame implements ActionListener{
 		
 		JButton mButton01 = new JButton();
 		JButton mButton02 = new JButton();
-		
+
+		JButton mButton03 = new JButton();
 		mButton01.setText("Button 01");
 		mButton02.setText("Button 02");
 		
 		mButton01.setActionCommand("Button01");
 		mButton02.setActionCommand("Button02");
+		mButton03.setActionCommand("Button03");
+		
 		
 		mButton01.addActionListener(this);
 		mButton02.addActionListener(this);
-		JButton mButton03 = new JButton();
 		mButton03.addActionListener(this);
 		mButton03.setText("Button03");
 		mPanel.add(mButton01);
@@ -63,14 +65,6 @@ public class TestClassMain extends JFrame implements ActionListener{
 		
 		
 		this.setContentPane(mPanel);
-		
-		
-		
-		
-		
-		
-		
-		
 		
 	}
 	
@@ -87,6 +81,9 @@ public class TestClassMain extends JFrame implements ActionListener{
 			
 		}
 		if("Button02".equals(e.getActionCommand())){
+			
+		}
+		if("Button03".equals(e.getActionCommand())){
 			
 		}
 	}
