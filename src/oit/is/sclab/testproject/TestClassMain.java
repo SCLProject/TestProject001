@@ -30,7 +30,7 @@ public class TestClassMain extends JFrame implements ActionListener{
 		tcMain.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		tcMain.setSize(640,480);
 		tcMain.setVisible(true);	
-		
+
 	}
 	
 	/**
@@ -52,10 +52,15 @@ public class TestClassMain extends JFrame implements ActionListener{
 		
 		mButton01.addActionListener(this);
 		mButton02.addActionListener(this);
-		
-		
+		JButton mButton03 = new JButton();
+		mButton03.addActionListener(this);
+		mButton03.setText("Button03");
 		mPanel.add(mButton01);
 		mPanel.add(mButton02);
+		mPanel.add(mButton03);
+		
+		
+		
 		
 		this.setContentPane(mPanel);
 		
